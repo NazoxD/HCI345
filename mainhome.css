@@ -1,0 +1,109 @@
+.body {
+    margin-top: 100px !important;
+}
+
+.navbar-default{
+    background-color: #497aff;
+
+}
+
+.navbar .navbar-nav li > a {
+    color: #ffffff !important;
+    font: 400 15px/1.7 "Raleway", sans-serif
+}
+.navbar-left img{
+    margin-top: 25%;
+}
+
+.side-nav {
+    background: #eee;
+    padding-left: 50px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+
+}
+
+/* Chat containers */
+.contain {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px 0;
+    overflow: auto;
+    
+  }
+  
+  /* Darker chat container */
+  .darker {
+    border-color: #ccc;
+    background-color: #ddd;
+  }
+  
+  /* Clear floats */
+  .contain::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  /* Style images */
+  .contain img {
+    float: left;
+    max-width: 60px;
+    width: 100%;
+    margin-right: 20px;
+    border-radius: 50%;
+  }
+  
+  /* Style the right image */
+  .contain img.right {
+    float: right;
+    margin-left: 20px;
+    margin-right:0;
+  }
+  
+  /* Style time text */
+  .time-right {
+    float: right;
+    color: #aaa;
+  }
+  
+  /* Style time text */
+  .time-left {
+    float: left;
+    color: #999;
+  }
+
+.type-here{
+      float: right;
+      border-radius: 5px;
+      margin: 10px 0;
+      width: 250px;
+      height: 100px;
+  }
+
+/* .sidenav {
+    font: 400 15px/1.7 "Raleway", sans-serif;
+    width: 250px;
+    position: fixed;
+    z-index: 1;
+    top: 12%;
+    left: 2%;
+    background: #eee;
+    overflow-x: hidden;
+    padding: 20px 0;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+  color: #064579;
+} */
+
