@@ -5,91 +5,163 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-	<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="mainhome.css">
+    <link rel="stylesheet" type="text/css" href="semantic.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <link rel="stylesheet" type="text/css" href="mainhome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+
 
 </head>
 <body>
 
 <!-- THIS IS THE NAVBAR -->
-<nav class="navbar navbar-default navbar">
-	<div class="container">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-left" href="#homeTop"><img src="logo.png" width="30" height="30"></a>
-		</div>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark">
+  <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+      <a class="navbar-brand" href="#">
+          <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+          Universal
+        </a>
 
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav">
-				<li><a href="#homeTop">Home</a></li>
-			</ul>
-			<ul class="nav navbar-nav navbar-right">
-				<li><a target="_blank" rel="noopener noreferrer" href=""><i class="fas fa-bell"></i> | Notifications</a></li>
-				<li><a target="_blank" rel="noopener noreferrer" href=""><i class="fas fa-envelope"></i> | Emails</a></li>
-				<li><a target="_blank" rel="noopener noreferrer" href=""><i class="fas fa-users"></i> | User Details</a></li>
-				<li><a target="_blank" rel="noopener noreferrer" href=""><i class="fas fa-calendar-alt"></i> | Group Calendar</a></li>
-
-			</ul>
-		</div>
-	</div>
+  </div>
+  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+      <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-bell"></i> | Notifications</a></a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="#"><i class="fas fa-envelope"></i> | Emails</a></a>
+          </li>
+      </ul>
+  </div>
 </nav>
+
 
 <div class="container-fluid">
     <div class="row">
         <!-- Side Navbar -->
         <div class="col-sm-2 side-nav">
-            <a href="#">Group Members</a>
-            <hr>
-            <a href="#">Projects</a>
-            <hr>
-            <a href="#">Personal Log</a>
-            <hr>
-            <a href="#">Request Tutor</a>
-            <hr>
-            <a href="#">Reminders</a>
+              <div class="ui left fixed vertical menu" style="margin-top: 53px" >
+                  <div class="item">
+                      <img class="circle-image" src="https://i.imgur.com/84Aq59x.jpg">
+                    </div>
+                    <span class="name">
+                      Damon
+                    </span>
+
+                  <a class="item"><i class="fas fa-file-alt"></i> | Projects</a>
+                  <a class="item"><i class="fas fa-users"></i> | Members</a>
+                  <a class="item"><i class="fas fa-calendar-alt"></i> | Calendar</a>
+                  <a class="item"><i class="fas fa-envelope"></i> | Placeholder</a>
+                  <a class="item"><i class="fas fa-envelope"></i> | Placeholder</a>
+                  <a class="item"><i class="fas fa-envelope"></i> | Placeholder</a>
+                </div>
+  
         </div>
         <!-- Middle content -->
-        <div class="col-lg-8 middle-content">
-
+        <div class="col-lg-7 middle-content">
+            <button type="button" class="btn btn-success"> + Create Project</button>
+            <button type="button" class="btn btn-danger"> - Delete Project</button>
+            <div class="ui link cards">
+                <div class="card">
+                  <div class="content">
+                    <div class="header">Assignment 1</div>
+                    <div class="meta">
+                      Created: 14/03/2019
+                    </div>
+                    <div class="description">
+                      Design a software system that makes group work better in some way.
+                    </div>
+                  </div>
+                  <div class="extra content">
+                    <span class="right floated">
+                        <button class="ui primary button">
+                            View
+                        </button>
+                    </span>
+                  </div>
+                </div>
+                <div class="card">
+                  <div class="content">
+                    <div class="header">Assignment 2</div>
+                    <div class="meta">
+                      Created: 20/04/2019
+                    </div>
+                    <div class="description">
+                      Choose a design feature subset of your system related to "task management", which could mean various ...
+                    </div>
+                  </div>
+                  <div class="extra content">
+                    <span class="right floated">
+                        <button class="ui primary button">
+                            View
+                        </button>
+                    </span>
+                  </div>
+                </div>
         </div>
         <!-- Chatbox -->
-        <div class="col-sm-2 chat-box">
-                <div class="contain">
-                        <img src="logo.png" alt="Avatar">
-                        <p>Hey guys, so what should we work on today?</p>
-                        <span class="time-right">11:00</span>
-                      </div>
-                      
-                      <div class="contain darker">
-                        <img src="logo.png" alt="Avatar" class="right">
-                        <p>I think we need to finish the coding</p>
-                        <span class="time-left">11:01</span>
-                      </div>
-                      
-                      <div class="contain">
-                        <img src="logo.png" alt="Avatar">
-                        <p>Okay, I'll get on that now</p>
-                        <span class="time-right">11:02</span>
-                      </div>
-                      
-                      <div class="contain darker">
-                        <img src="logo.png" alt="Avatar" class="right">
-                        <p>I'll finish the documentation</p>
-                        <span class="time-left">11:05</span>
-                      </div>
+        <div class="col-sm-3 chat-box">
+                      <div class="ui right fixed vertical menu" style="margin-top: 53px" >
+                          <div class="ui tabular menu">
+                              <a class="item active">
+                                General
+                              </a>
+                              <a class="item">
+                                A1
+                              </a>
+                              <a class="item" >
+                                  A2
+                              </a>
+                            </div>
+                          <i class="far fa-window-minimize"></i>
+                          <div class="contain">
+                              <a class="ui image label">
+                                  <img src="https://i.imgur.com/84Aq59x.jpg" >
+                                  Damon
+                                </a>
+                              <p>Hey guys, so what should we work on today?</p>
+                              <span class="time-right">11:00</span>
+                            </div>
+                            
+                            <div class="contain darker">
+                                <a class="ui image label">
+                                    <img src="https://i.imgur.com/rOtACXg.jpg">
+                                    Leon
+                                  </a>
+                              <p>I think we need to finish the coding</p>
+                              <span class="time-right">11:01</span>
+                            </div>
+                            
+                            <div class="contain">
+                                <a class="ui image label">
+                                    <img src="https://i.imgur.com/84Aq59x.jpg">
+                                    Damon
+                                  </a>
+                              <p>Okay, I'll get on that now</p>
+                              <span class="time-right">11:02</span>
+                            </div>
+                            
+                            <div class="contain darker">
+                                <a class="ui image label">
+                                    <img src="https://i.imgur.com/HNEL9WT.jpg">
+                                    Minh
+                                  </a>
+                              <p>I'll finish the documentation</p>
+                              <span class="time-right">11:05</span>
+                            </div>
 
-                      <div class="type-here">
-                          <input type="text" placeholder="Type here" class="type">
-                          <button type="button" class="btn btn-primary">Send</button>
+                            <!-- <div class="form-group">
+                                <label for="comment">Press Enter to send:</label>
+                                <textarea class="form-control" rows="3" id="comment"></textarea>
+                              </div> -->
+                              <div class="ui action input">
+                                  <input type="text" placeholder="Type a message">
+                                  <button class="ui icon button">
+                                      <i class="fas fa-arrow-right"></i>
+                                  </button>
+                                </div>
+
                       </div>
         </div>
     </div>
