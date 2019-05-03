@@ -1,12 +1,9 @@
-.body {
-    margin-top: 100px !important;
-}
 
+/* THIS IS THE NAVBAR */
 .navbar-default{
     background-color: #497aff;
 
 }
-
 .navbar .navbar-nav li > a {
     color: #ffffff !important;
     font: 400 15px/1.7 "Raleway", sans-serif
@@ -15,21 +12,16 @@
     margin-top: 25%;
 }
 
-.side-nav {
-    background: #eee;
-    padding-left: 50px;
-    padding-top: 50px;
-    padding-bottom: 50px;
 
-}
 
+/* THIS IS THE RIGHT CONTAINER OF THE PAGE */
 /* Chat containers */
 .contain {
     border: 2px solid #dedede;
     background-color: #f1f1f1;
     border-radius: 5px;
-    padding: 10px;
-    margin: 10px 0;
+    padding: 5px;
+    margin: 5px 0;
     overflow: auto;
     
   }
@@ -50,16 +42,16 @@
   /* Style images */
   .contain img {
     float: left;
-    max-width: 60px;
+    max-width: 20px;
     width: 100%;
-    margin-right: 20px;
+    margin-right: 5px;
     border-radius: 50%;
   }
   
   /* Style the right image */
   .contain img.right {
     float: right;
-    margin-left: 20px;
+    margin-left: 5px;
     margin-right:0;
   }
   
@@ -69,41 +61,32 @@
     color: #aaa;
   }
   
-  /* Style time text */
-  .time-left {
-    float: left;
-    color: #999;
-  }
 
-.type-here{
-      float: right;
-      border-radius: 5px;
-      margin: 10px 0;
-      width: 250px;
-      height: 100px;
-  }
-
-/* .sidenav {
-    font: 400 15px/1.7 "Raleway", sans-serif;
-    width: 250px;
-    position: fixed;
-    z-index: 1;
-    top: 12%;
-    left: 2%;
-    background: #eee;
-    overflow-x: hidden;
-    padding: 20px 0;
+.btn-success {
+  margin-top: 20px;
+  margin-left: 25px;
 }
 
-.sidenav a {
-    padding: 6px 8px 6px 16px;
-    text-decoration: none;
-    font-size: 25px;
-    color: #2196F3;
-    display: block;
+.btn-danger {
+  margin-top: 20px;
+  margin-left: 5px;
 }
 
-.sidenav a:hover {
-  color: #064579;
-} */
+.fa-window-minimize {
+  padding-left: 180px;
+}
+
+.circle-image {
+  width:64px;
+  margin: 10px;
+  border-radius: 450px;
+  -webkit-border-radius: 450px;
+  -moz-border-radius: 450px;
+}
+
+.name {
+  padding: 70px;
+  font-size:1.4em;
+}
+
 
