@@ -29879,6 +29879,7 @@ a.ui.card:hover,
   height: auto;
   border-radius: 0.125rem;
   border: none;
+  padding-top: 10px;
 }
 
 .ui.items > .item > .image:only-child > img {
@@ -29902,6 +29903,7 @@ a.ui.card:hover,
   font-size: 1em;
   border: none;
   border-radius: 0em;
+  padding-top:10px;
 }
 
 .ui.items > .item > .content:after {
