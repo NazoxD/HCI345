@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="mainhome.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="semantic.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <link rel="stylesheet" type="text/css" href="mainhome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -16,52 +16,47 @@
 <body>
 
 <!-- THIS IS THE NAVBAR -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-      <a class="navbar-brand" href="#">
-          <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-          Universal
-        </a>
-
-  </div>
-  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-bell"></i> | Notifications</a></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-envelope"></i> | Emails</a></a>
-          </li>
-      </ul>
-  </div>
+<nav class="navbar navbar-expand-md navbar-custom">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <a class="navbar-brand brand" href="home.html"><img src="logo.png" width="30" height="30" class="d-inline-block align-top">Universal</a>
+  
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-bell"></i> | Notifications</a></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-envelope"></i> | Emails</a></a>
+            </li>
+        </ul>
+    </div>
+  </nav>
 </nav>
-
 
 <div class="container-fluid">
     <div class="row">
         <!-- Side Navbar -->
         <div class="col-sm-2 side-nav">
-              <div class="ui left fixed vertical menu" style="margin-top: 53px" >
+              <div class="ui left fixed vertical pointing menu" style="margin-top: 53px" >
                   <div class="item">
                       <img class="circle-image" src="https://i.imgur.com/84Aq59x.jpg">
                     </div>
                     <span class="name">
                       Damon
                     </span>
-
-                  <a class="item"><i class="fas fa-file-alt"></i> | Projects</a>
-                  <a class="item"><i class="fas fa-users"></i> | Members</a>
-                  <a class="item"><i class="fas fa-calendar-alt"></i> | Calendar</a>
-                  <a class="item"><i class="fas fa-envelope"></i> | Placeholder</a>
-                  <a class="item"><i class="fas fa-envelope"></i> | Placeholder</a>
-                  <a class="item"><i class="fas fa-envelope"></i> | Placeholder</a>
+                    <a class="active item">Home</a>
+                  <a class="ui left pointing dropdown item" href="user_details.html"><i class="dropdown icon"></i>Users Details</a>
+                  <a class="ui left pointing dropdown item" href="project_page.html"><i class="dropdown icon"></i>Projects</a>
+                  <a class="item">Calendar</a>
+                  <a class="item">Logout</a>
                 </div>
   
         </div>
         <!-- Middle content -->
         <div class="col-lg-7 middle-content">
-            <button type="button" class="btn btn-success"> + Create Project</button>
-            <button type="button" class="btn btn-danger"> - Delete Project</button>
+            <button class="positive ui button" style="margin-left:25px; margin-top:25px;"><i class="fas fa-plus"></i> Create Project</button>
+            <button class="negative ui button" ><i class="fas fa-minus"></i> Delete Project</button>
             <div class="ui link cards">
                 <div class="card">
                   <div class="content">
@@ -74,11 +69,13 @@
                     </div>
                   </div>
                   <div class="extra content">
+                      <span class="left floated">
+                          <button class="ui orange button">In Progress</button>
+                      </span>
                     <span class="right floated">
-                        <button class="ui primary button">
-                            View
-                        </button>
+                        <a href="project_page.html"><button class="ui primary button">View</button></a>
                     </span>
+
                   </div>
                 </div>
                 <div class="card">
@@ -92,6 +89,9 @@
                     </div>
                   </div>
                   <div class="extra content">
+                      <span class="left floated">
+                          <button class="ui orange button">In Progress</button>
+                      </span>
                     <span class="right floated">
                         <button class="ui primary button">
                             View
@@ -99,6 +99,25 @@
                     </span>
                   </div>
                 </div>
+                <div class="card">
+                    <div class="content">
+                      <div class="header">Assignment 3</div>
+                      <div class="meta">
+                        Created: 5/05/2019
+                      </div>
+                      <div class="description">
+                        Choose a design feature subset of your system related to "task management", which could mean various ...
+                      </div>
+                    </div>
+                    <div class="extra content">
+                        <span class="left floated">
+                            <button class="positive ui button">Completed</button>
+                        </span>
+                      <span class="right floated">
+                          <a href="tutor_screen.html"><button class="ui primary button" href="tutor_screen.html"> Mark </button></a>
+                      </span>
+                    </div>
+                  </div>
         </div>
         <!-- Chatbox -->
         <div class="col-sm-3 chat-box">
@@ -170,3 +189,4 @@
 
 </body>
 </html>
+
