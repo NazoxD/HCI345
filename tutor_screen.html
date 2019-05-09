@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
-    <link rel="stylesheet" type="text/css" href="mainhome.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
     <link rel="stylesheet" type="text/css" href="semantic.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    <link rel="stylesheet" type="text/css" href="mainhome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
@@ -16,176 +16,184 @@
 <body>
 
 <!-- THIS IS THE NAVBAR -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-      <a class="navbar-brand" href="#">
-          <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-          Universal
-        </a>
-
-  </div>
-  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-bell"></i> | Notifications</a></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-envelope"></i> | Emails</a></a>
-          </li>
-      </ul>
-  </div>
+<nav class="navbar navbar-expand-md navbar-custom">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <a class="navbar-brand brand" href="#"><img src="logo.png" width="30" height="30" class="d-inline-block align-top">Universal</a>
+  
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-bell"></i> | Notifications</a></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-envelope"></i> | Emails</a></a>
+            </li>
+        </ul>
+    </div>
+  </nav>
 </nav>
+
 
 
 <div class="container-fluid">
     <div class="row">
         <!-- Side Navbar -->
         <div class="col-sm-2 side-nav">
-              <div class="ui left fixed vertical menu" style="margin-top: 53px" >
+              <div class="ui left fixed vertical pointing menu" style="margin-top: 53px" >
                   <div class="item">
-                      <img class="circle-image" src="https://scontent.fakl2-1.fna.fbcdn.net/v/t1.0-9/37805639_2147948378567533_1380924164252106752_n.jpg?_nc_cat=107&_nc_ht=scontent.fakl2-1.fna&oh=a5c62a2827841784f16954cac0cef624&oe=5D2AAC44">
+                      <img class="circle-image" src="https://i.imgur.com/84Aq59x.jpg">
                     </div>
                     <span class="name">
-                      Joshua
+                      Damon
                     </span>
 
-                  <a class="item"><i class="fas fa-file-alt"></i> | Projects</a>
-                  <a class="item"><i class="fas fa-users"></i> | Members</a>
-                  <a class="item"><i class="fas fa-calendar-alt"></i> | Calendar</a>
-                  <a class="item"><i class="fas fa-envelope"></i> | Placeholder</a>
-                  <a class="item"><i class="fas fa-envelope"></i> | Placeholder</a>
-                  <a class="item"><i class="fas fa-envelope"></i> | Placeholder</a>
+                  <a class="item">Home</a>
+                  <a class="ui left pointing dropdown item"><i class="dropdown icon"></i>Users Details</a>
+                  <a class="active item">Projects </a>
+                  <div class="menu">
+                      <a class="item">Assignment 1</a>
+                      <a class="item">Assignment 2</a>
+                      <a class="active item">Assignment 3 (CS345 Group 45)</a>
+                    </div>
+                  <a class="item">Calendar</a>
+                  <a class="item">Logout</a>
                 </div>
   
         </div>
 <!-- Middle content -->
   <div class="col-lg-9 middle-content">
   <!-- Person being viewed -->
-
+  <h1 class="ui header">Tutor Page - Assignment 3 (CS345 Group 45)</h1>
   <div class="ui divided items" >
-      <div class="item">
-        <div class="image">
-          <img src="https://i.imgur.com/84Aq59x.jpg">
+      <span style = "float:right">
+          <div class="ui compact menu">
+              <div class="ui simple dropdown item">
+                Select User
+                <i class="dropdown icon"></i>
+                <div class="menu">
+                  <div class="item">John Smith</div>
+                  <div class="item">Jeremy Jackson</div>
+                  <div class="item">Kyle Quindo</div>
+                  <div class="item">Lisa Reus</div>
+                  <div class="item">Jessica Dolberg</div>
+                </div>
+              </div>
+            </div>
+      </span>
+      
+      <div class="item"> 
+        <div class="ui small circular image">
+          <img src="https://scontent.fakl2-1.fna.fbcdn.net/v/t31.0-1/c379.0.1290.1290a/10506738_10150004552801856_220367501106153455_o.jpg?_nc_cat=1&_nc_ht=scontent.fakl2-1.fna&oh=f63c48b551a526227191ae7abc56aecf&oe=5D5FE949">
         </div>
         <div class="content">
-          <a class="header">Damon Choi</a>
+          <a class="header">John Smith</a>
           <div class="meta">
             <span>Personal Log</span>
           </div>
           <div class="description">
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum non ipsum sed euismod. Etiam quis quam eget nisl porta tincidunt. Nunc ac neque a arcu rutrum imperdiet at ac ante. Mauris consequat in neque at pulvinar. Donec non sodales libero, sed egestas sem. In ut lacus metus. Integer convallis auctor lobortis. Maecenas accumsan tellus consectetur, auctor orci a, gravida velit. Curabitur sodales pharetra condimentum.
               </p>
+              <span style = "float:right">
+                  <button class="ui primary button">
+                      Submit Mark
+                  </button>
+              </span>
           </div>
         </div>
       </div>
-
+      <hr>
+      <h3 class="ui header">Comment on others</h3>
       <!-- Group member comments -->
-      <div class="ui segment">
-      <div class="ui divided items">
-          <div class="item">
-            <div class="ui small image">
-              <img src="https://i.imgur.com/HNEL9WT.jpg">
-            </div>
-            <div class="content">
-              <div class="header">Dinh Quang Minh</div>
-              <div class="meta">
-                <span class="price">Comments</span>
-
+      <div class="ui top attached tabular menu">
+          <a class="active item">
+            Jeremy Jackson
+          </a>
+          <a class="item">
+            Kyle Quindo
+          </a>
+          <a class="item">
+            Lisa Reus
+          </a>
+          <a class="item">
+            Jessica Dolberg
+          </a>
+          <div class="right menu">
+            <div class="item">
+              <div class="ui transparent icon input">
+                <input type="text" placeholder="Search users...">
+                <i class="fas fa-search"></i>
               </div>
-              <div class="description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum non ipsum sed euismod. Etiam quis quam eget nisl porta tincidunt. Nunc ac neque a arcu rutrum imperdiet at ac ante. Mauris consequat in neque at pulvinar. Donec non sodales libero, sed egestas sem. In ut lacus metus. Integer convallis auctor lobortis. Maecenas accumsan tellus consectetur, auctor orci a, gravida velit. Curabitur sodales pharetra condimentum.</p>
-              </div>
-              <div class="extra">
-                  Last Updated: 20/04/2019
-                </div>
-            </div>
-          </div>
-        
-          <div class="item">
-            <div class="ui small image">
-              <img src="https://i.imgur.com/rOtACXg.jpg">
-            </div>
-            <div class="content">
-              <div class="header">Kok Hong Leon Le</div>
-              <div class="meta">
-                <span class="price">Comments</span>
-              </div>
-              <div class="description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum non ipsum sed euismod. Etiam quis quam eget nisl porta tincidunt. Nunc ac neque a arcu rutrum imperdiet at ac ante. Mauris consequat in neque at pulvinar. Donec non sodales libero, sed egestas sem. In ut lacus metus. Integer convallis auctor lobortis. Maecenas accumsan tellus consectetur, auctor orci a, gravida velit. Curabitur sodales pharetra condimentum.</p>
-              </div>
-              <div class="extra">
-                  Last Updated: 30/04/2019
-                </div>
             </div>
           </div>
+        </div>
+        <div class="ui bottom attached segment">
+          <p>
+                  <div class="ui divided items">
+                <div class="item">
+                      <div class="ui small circular image">
+                        <img src="https://scontent.fakl2-1.fna.fbcdn.net/v/t31.0-1/c379.0.1290.1290a/10506738_10150004552801856_220367501106153455_o.jpg?_nc_cat=1&_nc_ht=scontent.fakl2-1.fna&oh=f63c48b551a526227191ae7abc56aecf&oe=5D5FE949">
+                      </div>
+                      <div class="content">
+                        <div class="header">Jeremy Jackson</div>
+                        <div class="meta">
+                          <span class="price">Comments</span>
+          
+                        </div>
+                        <div class="description">
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum non ipsum sed euismod. Etiam quis quam eget nisl porta tincidunt. Nunc ac neque a arcu rutrum imperdiet at ac ante. Mauris consequat in neque at pulvinar. Donec non sodales libero, sed egestas sem. In ut lacus metus. Integer convallis auctor lobortis. Maecenas accumsan tellus consectetur, auctor orci a, gravida velit. Curabitur sodales pharetra condimentum.</p>
+                        </div>
+                        <div class="extra">
+                            Last Updated: 20/04/2019
+                          </div>
+                      </div>
+              </div>
 
-          <div class="item">
-            <div class="ui small image">
-              <img src="https://scontent.fakl2-1.fna.fbcdn.net/v/t1.0-9/58749434_128855814956073_2595852506848296960_n.jpg?_nc_cat=110&_nc_ht=scontent.fakl2-1.fna&oh=cfe1439ffc55240e628bb27ce13dd01b&oe=5D5CA70A">
-            </div>
-            <div class="content">
-              <div class="header">Alan Martin</div>
-              <div class="meta">
-                <span class="price">Comments</span>
-              </div>
-              <div class="description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum non ipsum sed euismod. Etiam quis quam eget nisl porta tincidunt. Nunc ac neque a arcu rutrum imperdiet at ac ante. Mauris consequat in neque at pulvinar. Donec non sodales libero, sed egestas sem. In ut lacus metus. Integer convallis auctor lobortis. Maecenas accumsan tellus consectetur, auctor orci a, gravida velit. Curabitur sodales pharetra condimentum.</p>
-              </div>
-              <div class="extra">
-                  Last Updated: 25/04/2019
-                </div>
-            </div>
-          </div>
 
 
-        <div class="item">
-            <div class="ui small image">
-              <img src="https://scontent.fakl2-1.fna.fbcdn.net/v/t31.0-1/c379.0.1290.1290a/10506738_10150004552801856_220367501106153455_o.jpg?_nc_cat=1&_nc_ht=scontent.fakl2-1.fna&oh=f63c48b551a526227191ae7abc56aecf&oe=5D5FE949">
-            </div>
-            <div class="content">
-              <div class="header">Mona Jena</div>
-              <div class="meta">
-                <span class="price">Comments</span>
-              </div>
-              <div class="description">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean condimentum non ipsum sed euismod. Etiam quis quam eget nisl porta tincidunt. Nunc ac neque a arcu rutrum imperdiet at ac ante. Mauris consequat in neque at pulvinar. Donec non sodales libero, sed egestas sem. In ut lacus metus. Integer convallis auctor lobortis. Maecenas accumsan tellus consectetur, auctor orci a, gravida velit. Curabitur sodales pharetra condimentum.</p>
-              </div>
-              <div class="extra">
-                  Last Updated: 30/04/2019
-                </div>
-            </div>
-          </div>
-  </div>
-</div>
+          </p>
+
+
+
+
+        </div>
   
-          <label>Progress compared to others</label>
+        <div class="ui form">
+            <div class="field">
+              <label>Progress compared to others</label>
+            </div>
+        </div>
 
-          <div></div>
-          <div class="ui form">
-          <span>Damon</span>
-          <div class="progress">
-              <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
-        </div>
-        <span>Al</span>
+        <div></div>
+
+        <div class="ui segment">
+        <div class="ui form">
+        <h5 class="ui header">John Smith</h5>
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 46%" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100"></div>
+            <div class="progress-bar" role="progressbar" style="width: 33%" aria-valuenow="33" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <span>Leon</span>
+        <h5 class="ui header">Jeremy Jackson</h5>
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar" role="progressbar" style="width: 46%" aria-valuenow="46" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <span>Minh</span>
+        <h5 class="ui header">Kyle Quindo</h5>
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 48%" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-        <span>Mona</span>
+        <h5 class="ui header">Lisa Reus</h5>
         <div class="progress">
-          <div class="progress-bar" role="progressbar" style="width: 64%" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
+        <div class="progress-bar" role="progressbar" style="width: 48%" aria-valuenow="48" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
-      </div>
+        <h5 class="ui header">Jessica Dolberg</h5>
+        <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 64%" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
+        </div>
+        </div>
+        </div>
 </div>
 </div>
 
 </body>
 </html>
+
 
