@@ -6,7 +6,7 @@
 }
 .navbar .navbar-nav li > a {
     color: #ffffff !important;
-    font: 400 15px/1.7 "Raleway", sans-serif
+    font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
 }
 .navbar-left img{
     margin-top: 25%;
@@ -90,3 +90,39 @@
 }
 
 
+.tutor{
+  margin-left: -20px;
+}
+
+#wrapper {
+  width: 1000px;
+  height: auto;
+}
+#left {
+   width: 500px;
+   height: auto;
+   float: left;
+}
+#right {
+    width: 500px;
+    height: auto;
+    float: left;
+}
+
+.navbar-custom { 
+  background-color: #008af1 !important; 
+}
+
+
+.navbar-custom .navbar-brand.brand {
+  color: rgb(255,255,255);
+}
+
+.align-text i{
+  vertical-align: middle;  
+  display:inline-block;
+}
+
+.progress-bar{
+  background-color: #008af1 !important;
+}
