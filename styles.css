@@ -126,3 +126,7 @@
 .progress-bar{
   background-color: #008af1 !important;
 }
+
+.ui.header {
+  margin: 0px !important;
+}
