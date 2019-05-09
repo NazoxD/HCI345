@@ -130,3 +130,7 @@
 .ui.header {
   margin: 0px !important;
 }
+
+.ui.compact.menu{
+  margin-bottom: 5px !important;
+}
