@@ -16,32 +16,29 @@
 <body>
 
 <!-- THIS IS THE NAVBAR -->
-<nav class="navbar navbar-expand-md navbar-dark bg-dark">
-  <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-      <a class="navbar-brand" href="#">
-          <img src="logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
-          Universal
-        </a>
-
-  </div>
-  <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-      <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-bell"></i> | Notifications</a></a>
-          </li>
-          <li class="nav-item">
-              <a class="nav-link" href="#"><i class="fas fa-envelope"></i> | Emails</a></a>
-          </li>
-      </ul>
-  </div>
+<nav class="navbar navbar-expand-md navbar-custom">
+    <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
+        <a class="navbar-brand brand"><img src="logo.png" width="30" height="30" class="d-inline-block align-top">Universal</a>
+  
+    </div>
+    <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+        <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-bell"></i> | Notifications</a></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"><i class="fas fa-envelope"></i> | Emails</a></a>
+            </li>
+        </ul>
+    </div>
+  </nav>
 </nav>
-
 
 <div class="container-fluid">
     <div class="row">
         <!-- Side Navbar -->
         <div class="col-sm-2 side-nav">
-              <div class="ui left fixed vertical menu" style="margin-top: 53px" >
+              <div class="ui left fixed vertical pointing menu" style="margin-top: 50px" >
                   <div class="item">
                       <img class="circle-image" src="https://i.imgur.com/84Aq59x.jpg">
                     </div>
@@ -49,31 +46,43 @@
                       Damon
                     </span>
 
-                  <a class="item"><i class="fas fa-file-alt"></i> | Projects</a>
-                  <a class="item"><i class="fas fa-users"></i> | Members</a>
-                  <a class="item"><i class="fas fa-calendar-alt"></i> | Calendar</a>
-                  <a class="item"><i class="fas fa-envelope"></i> | Placeholder</a>
-                  <a class="item"><i class="fas fa-envelope"></i> | Placeholder</a>
-                  <a class="item"><i class="fas fa-envelope"></i> | Placeholder</a>
+                  <a class="item">Users Details</a>
+                  <div class="menu">
+                      <a class="item">Damon</a>
+                      <a class="item">Leon</a>
+                      <a class="item">Minh</a>
+                      <a class="item">Alan</a>
+                      <a class="item">Mona</a>
+                    </div>
+                  <a class="active item">Projects </a>
+                  <div class="menu">
+                      <a class="active item">Assignment 1</a>
+                      <a class="item">Assignment 2</a>
+                      <a class="item">Assignment 3</a>
+                    </div>
+                  <a class="item">Calendar</a>
+                  <a class="item">Logout</a>
                 </div>
   
         </div>
 <!-- Middle content -->
   <div class="col-lg-9 middle-content">
   <!-- Tasks -->
+  <h1 class="ui header">User Details</h1>
     <div class="ui cards">
        <div class="card" style="margin-left:-18px;">
           <div class="content">
             <div class="header">Tasks</div>
               <div class="description">
                 <div class="ui list">
-                  <div class="item"> 1 </div>
-                  <div class="item"> 2 </div>
-                  <div class="item"> 3 </div>
+                  <div class="item"> 1. </div>
+                  <div class="item"> 2. </div>
+                  <div class="item"> 3. </div>
                 </div>
               </div>
             </div>
           </div>
+    <!-- Task list -->
           <div class="card">
               <div class="content">
                 <div class="header">Task List</div>
@@ -95,11 +104,14 @@
                 </div>
               </div>
             </div>
-  <!-- Task list -->
+
+
+  <!-- Quick Review -->
         <div class="card">
           <div class="content">
             <div class="header">Quick Review</div>
               <div class="description">
+                <div class="align-text">
                   Damon<i class="fas fa-thumbs-up"></i> | <i class="fas fa-thumbs-down"></i>
                   <div></div>
                   Al<i class="fas fa-thumbs-up"></i> | <i class="fas fa-thumbs-down"></i>
@@ -109,6 +121,7 @@
                   Minh<i class="fas fa-thumbs-up"></i> | <i class="fas fa-thumbs-down"></i>
                   <div></div>
                   Mona<i class="fas fa-thumbs-up"></i> | <i class="fas fa-thumbs-down"></i>
+                </div>
               </div>
             </div>
           </div>
@@ -124,9 +137,13 @@
           <div></div>
           </div>
 
-          <label>Progress compared to others</label>
-
+          <div class="ui form">
+              <div class="field">
+                <label>Progress compared to others</label>
+              </div>
+          </div>
           <div></div>
+          <div class="ui segment">
           <div class="ui form">
           <span>Damon</span>
           <div class="progress">
@@ -149,8 +166,10 @@
           <div class="progress-bar" role="progressbar" style="width: 64%" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
         </div>
       </div>
+    </div>
 </div>
 </div>
 
 </body>
 </html>
+
